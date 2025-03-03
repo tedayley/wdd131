@@ -2,13 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 /* Global Styles */
+/* Import Google Font */
 body {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400; /* Default weight */
+    font-size: 16px;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
+
+/* Use different font weights for specific elements */
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 300;
+}
+
 
 /* Navigation Bar */
 nav {
