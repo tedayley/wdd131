@@ -61,3 +61,10 @@ main {
     margin-bottom: 0.5rem;
     color: #444;
 }
+
+img {
+    max-width: 100%; /* Ensures images don't exceed the container width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra spacing */
+    margin: 0 auto; /* Centers the image */
+}
