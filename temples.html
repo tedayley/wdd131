@@ -10,21 +10,29 @@
         /* CSS for three-column layout */
         main {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 20px;
+            grid-template-columns: repeat(3, 1fr);  /* Creates 3 equal columns */
+            gap: 20px;  /* Adds space between grid items */
+            padding: 20px;  /* Adds padding around the grid */
         }
         figure {
-            text-align: center;
+            text-align: center;  /* Centers the image and caption inside each figure */
         }
 
         /* Improved footer style */
         footer {
+            text-align: center;  /* Centers the footer content */
+            padding: 10px;  /* Adds padding to the footer */
+            background-color: #f4f4f4;  /* Light gray background */
+            margin-top: 20px;  /* Adds space above the footer */
+            font-size: 1.2rem;  /* Increases the font size for readability */
+        }
+
+        /* Styles for the heading to float above the columns */
+        h1.welcome-heading {
             text-align: center;
-            padding: 10px;
-            background-color: #f4f4f4;
-            margin-top: 20px;
-            font-size: 1.2rem;
+            margin-top: 40px;  /* Adds space above the heading */
+            font-size: 2rem;  /* Adjust font size */
+            font-weight: bold;
         }
     </style>
 </head>
@@ -43,8 +51,10 @@
         </nav>
     </header>
 
+    <!-- Floating heading above the columns -->
+    <h1 class="welcome-heading">Welcome to the Temple Album</h1>
+
     <main>
-        <h1>Welcome to the Temple Album</h1>
         <!-- Nine temple figures with images and captions -->
         <figure>
             <img src="images/temple-placeholder.jpg" alt="Temple 1">

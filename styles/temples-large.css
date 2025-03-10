@@ -75,10 +75,10 @@ nav a:hover {
 
 /* Main Content Layout */
 main {
-    width: 80%;
-    margin: 30px auto;
-    text-align: center;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Creates 3 equal columns */
+    gap: 20px;  /* Adds space between grid items */
+    padding: 20px;  /* Adds padding around the grid */
 }
 
 /* Grid for Temple Images */
