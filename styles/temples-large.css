@@ -113,19 +113,6 @@ figcaption {
     text-align: center;
 }
 
-/* Responsive Adjustments */
-@media screen and (max-width: 900px) {
-    .temples-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .temples-container {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* Footer Styles */
 footer {
     background-color: #4CAF50;
