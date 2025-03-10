@@ -1,7 +1,16 @@
-/* Temples-large.css - Larger View Adjustments */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 /* Larger Navigation Styles */
 nav {
+    background-color: #333;
     padding: 15px 0;
 }
 
@@ -9,6 +18,9 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav li {
@@ -20,36 +32,53 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 10px;
-    font-size: 1.1rem;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
     background-color: #4CAF50;
     border-radius: 5px;
+    color: #fff;
 }
 
 /* Main Layout */
 main {
     width: 80%; /* Center content on larger screens */
     margin: 30px auto;
+    text-align: center;
+    padding: 20px;
 }
 
 /* Responsive Grid for Main Content */
-main .temples-container {
+.temples-container {
+    display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
     gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 figure {
-    max-width: 350px; /* Increase size for larger screens */
+    max-width: 400px; /* Increase size for larger screens */
+    margin: auto;
 }
 
 figcaption {
     font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
 }
 
-/* Adjust Footer for larger screens */
+/* Footer Banner */
 footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
     padding: 30px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 40px;
 }
