@@ -1,5 +1,5 @@
 header {
-    background-color: #4CAF50;
+    background-color: #273586;
     color: white;
     text-align: center;
     padding: 20px;
@@ -38,7 +38,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #4CAF50;
+    background-color: #273586;
     border-radius: 5px;
     color: #fff;
 }
