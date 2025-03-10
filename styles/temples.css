@@ -1,0 +1,167 @@
+/* Temples.css - Mobile First Design */
+
+/* Body and Global Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Example Google Font */
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #4CAF50; /* Green color */
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: #4CAF50; /* Green hover effect */
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+/* Layout using CSS Grid - One column on mobile */
+main .temples-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Figure Styles */
+figure {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Footer */
+footer p {
+    margin: 10px 0;
+}
+
+/* Responsive Media Queries for Larger Views */
+@media (min-width: 768px) {
+    main .temples-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets and small desktops */
+    }
+}
+
+@media (min-width: 1024px) {
+    main .temples-container {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for large desktops */
+    }
+}
+
+/* Hide the navigation menu by default on mobile */
+nav ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.active {
+    display: block;
+}
+
+/* Hamburger button styles */
+.hamburger {
+    display: none;  /* Hidden by default */
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Show the hamburger button only on mobile screens */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;  /* Hide the menu initially */
+    }
+
+    .hamburger {
+        display: block;  /* Show the hamburger button */
+    }
+
+    nav ul.active {
+        display: block;  /* Show the menu when the "active" class is added */
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .hamburger.active {
+        font-size: 2rem;
+    }
+}
