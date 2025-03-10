@@ -93,9 +93,19 @@ main {
     align-items: center;
 }
 
+.temples-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure three columns */
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
+    max-width: 1200px; /* Prevents it from stretching too wide */
+    margin: auto;
+}
 
 figure {
-    max-width: 100%; /* Ensure figures take full width of their grid cell */
+    max-width: 350px; /* Limit figure size */
+    width: 100%; /* Allow it to shrink as needed */
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -103,10 +113,12 @@ figure {
 }
 
 figure img {
-    width: 100%; /* Make images responsive within their figures */
+    width: 100%; /* Ensures the image stays within the figure */
+    max-width: 100%; /* Prevents it from growing beyond its container */
     height: auto;
-    border-radius: 10px; /* Optional: adds rounded corners to images */
+    border-radius: 10px;
 }
+
 
 figcaption {
     font-size: 1.2rem;
