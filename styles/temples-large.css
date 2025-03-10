@@ -1,3 +1,4 @@
+/* Header Styles */
 header {
     background-color: #273586;
     color: white;
@@ -8,7 +9,7 @@ header {
     text-transform: uppercase;
 }
 
-/* Larger Navigation Styles */
+/* Navigation Styles */
 nav {
     background-color: #333;
     padding: 15px 0;
@@ -40,16 +41,13 @@ nav a {
 nav a:hover {
     background-color: #273586;
     border-radius: 5px;
-    color: #fff;
 }
 
-
-/* Hide hamburger menu on larger screens */
+/* Hamburger Menu (Mobile Only) */
 .hamburger-menu {
     display: none;
 }
 
-/* Show hamburger menu only on mobile */
 @media screen and (max-width: 768px) {
     nav ul {
         display: none;
@@ -75,52 +73,60 @@ nav a:hover {
     }
 }
 
-
-/* Responsive Grid for Main Content */
-.temples-container {
-    display: grid;
-    column-count: 3;
-    grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+/* Main Content Layout */
+main {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px;
 }
 
+/* Grid for Temple Images */
 .temples-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ensure three columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    justify-content: center;
-    align-items: start;
-    max-width: 1200px; /* Prevents it from stretching too wide */
+    max-width: 1200px;
     margin: auto;
+    padding: 20px;
 }
 
 figure {
-    max-width: 350px; /* Limit figure size */
-    width: 30%; /* Allow it to shrink as needed */
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
 }
 
 figure img {
-    width: 30%; /* Ensures the image stays within the figure */
-    max-width: 100%; /* Prevents it from growing beyond its container */
+    width: 100%;
+    max-width: 350px;
     height: auto;
     border-radius: 10px;
 }
-
 
 figcaption {
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
     margin-top: 10px;
+    text-align: center;
 }
 
-/* Footer Banner */
+/* Responsive Adjustments */
+@media screen and (max-width: 900px) {
+    .temples-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .temples-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer Styles */
 footer {
     background-color: #4CAF50;
     color: white;
