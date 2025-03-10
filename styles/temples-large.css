@@ -93,15 +93,26 @@ main {
     align-items: center;
 }
 
+
 figure {
-    max-width: 400px; /* Increase size for larger screens */
+    max-width: 100%; /* Ensure figures take full width of their grid cell */
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure img {
+    width: 100%; /* Make images responsive within their figures */
+    height: auto;
+    border-radius: 10px; /* Optional: adds rounded corners to images */
 }
 
 figcaption {
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
+    margin-top: 10px;
 }
 
 /* Footer Banner */
