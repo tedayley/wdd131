@@ -6,6 +6,27 @@
     <title>Temple Album</title>
     <link rel="stylesheet" href="style/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
+    <style>
+        /* CSS for three-column layout */
+        main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        figure {
+            text-align: center;
+        }
+
+        /* Improved footer style */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -64,7 +85,7 @@
     </main>
 
     <footer>
-        <P>Taeg Dayley, Florida</P>
+        <p>&#169; Taeg Dayley, Florida</p>
     </footer>
 
     <script src="scripts/temples.js" defer></script>
