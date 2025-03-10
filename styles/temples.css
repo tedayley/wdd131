@@ -9,9 +9,18 @@ body {
     padding: 0;
 }
 
-h1, h2 {
+h1 {
     text-align: center;
-    color: #4CAF50; /* Green color */
+    color: #1d1f8a;
+}
+
+/* Styles for the h2 element to float above the columns */
+h2.welcome-heading {
+    text-align: center;
+    margin-bottom: 20px;  /* Adds space below the heading */
+    font-size: 2rem;  /* Adjust font size */
+    font-weight: bold;
+    grid-column: span 3; /* Ensures it spans the entire width of the grid (3 columns) */
 }
 
 footer {
@@ -93,7 +102,11 @@ figcaption {
 
 /* Footer */
 footer p {
-    margin: 10px 0;
+    text-align: center;  /* Centers the footer content */
+    padding: 10px;  /* Adds padding to the footer */
+    background-color: #929292;  /* Light gray background */
+    margin-top: 20px;  /* Adds space above the footer */
+    font-size: 1.2rem;  /* Increases the font size for readability */
 }
 
 /* Responsive Media Queries for Larger Views */
