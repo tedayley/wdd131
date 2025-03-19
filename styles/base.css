@@ -90,3 +90,14 @@ img {
     display: block; /* Removes extra spacing */
     margin: 0 auto; /* Centers the image */
 }
+
+/* Mobile-first approach */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Stacks cards vertically on smaller screens */
+    }
+
+    nav {
+        flex-direction: column; /* Stacks navigation links vertically */
+    }
+}
