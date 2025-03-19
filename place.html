@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <!-- Link to your CSS file (if needed) -->
+  <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/week3.js" defer></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <!-- Navigation bar (if required) -->
+    </nav>
+  </header>
+
+  <!-- Hero Image Section -->
+  <section class="hero">
+    <picture>
+      <!-- Responsive images for different screen sizes -->
+      <source srcset="images/hero-small.webp" media="(max-width: 600px)">
+      <source srcset="images/hero-medium.webp" media="(max-width: 1024px)">
+      <img src="images/hero-large.webp" alt="Hero Image" class="hero-image">
+    </picture>
+  </section>
+
+  <!-- Main Content Section -->
+  <main>
+    <section class="weather">
+      <h1>Weather ⛅</h1>
+      <div class="weather-info">
+        <!-- SVG Weather Icon for Mobile View -->
+        <div class="weather-icon">
+          <img src="images/weather-icon.svg" alt="Weather Icon" class="mobile-weather-icon">
+        </div>
+        <!-- Emoticon for Weather Icon on Wider View -->
+        <div class="weather-description">
+          <span class="wide-weather-icon">⛅</span>
+        </div>
+        <div class="weather-details">
+          <p>Temperature: 22°C</p>
+          <p>Condition: Cloudy</p>
+          <!-- Windchill factor will be displayed here -->
+          <p id="windchill">Windchill: </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Weather App. All Rights Reserved.</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+</html>
