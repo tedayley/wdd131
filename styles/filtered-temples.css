@@ -1,88 +1,79 @@
-/* styles/filtered-temples.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+/* styles/filtered-temples-large.css */
+@media only screen and (min-width: 32rem) {
+    body {
+        background-color: #f0f0f0;
+        font-family: "Roboto", sans-serif; /* Ensure this font is linked in HTML */
+    }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
+    header {
+        padding: 1.5rem;
+        background-color: #333;
+        color: white;
+        text-align: center;
+    }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        background-color: #444;
+        margin: 0;
+    }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
 
-nav a {
-    color: white;
-    text-decoration: none;
-}
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 10px 15px;
+        transition: background-color 0.3s, color 0.3s;
+    }
 
-main {
-    text-align: center;
-    padding: 20px;
-}
+    /* Hover effect for nav links */
+    nav ul li a:hover {
+        background-color: #666;
+        color: yellow;
+        border-radius: 5px;
+    }
 
-figure {
-    display: inline-block;
-    margin: 10px;
-    background: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+    main {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
 
-figure img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 5px;
-}
+    figure {
+        max-width: 400px;
+        margin: 20px;
+        text-align: center;
+        background-color: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-figcaption {
-    margin-top: 5px;
-    font-weight: bold;
-}
+    figure img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 20px;
-    font-size: 1rem;
-}
+    /* Slight zoom effect on hover */
+    figure img:hover {
+        transform: scale(1.05);
+    }
 
-footer p {
-    margin: 5px 0;
-}
-
-
-nav {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-nav button {
-    background-color: #444;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-nav button:hover {
-    background-color: #666;
+    figcaption {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        color: #555;
+    }
 }
