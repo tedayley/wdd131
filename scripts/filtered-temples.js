@@ -61,7 +61,7 @@ const temples = [
         dedicated: "1978, October, 30",
         area: 59246,
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sao-paulo-brazil/400x250/sao-paulo-brazil-temple-lds-1029180-wallpaper.jpg"
+        "https://churchofjesuschristtemples.org/assets/img/temples/_temp/017-S%C3%A3o-Paulo-Brazil-Temple.jpg"
       },
       {
         templeName: "Tokyo Japan",
@@ -69,7 +69,7 @@ const temples = [
         dedicated: "1980, October, 27",
         area: 52884,
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/400x250/tokyo-japan-temple-1029829-wallpaper.jpg"
+        "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-26340-main.jpg"
       },
       {
         templeName: "Johannesburg South Africa",
@@ -77,7 +77,7 @@ const temples = [
         dedicated: "1985, August, 24",
         area: 19708,
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-968279-wallpaper.jpg"
+        "https://churchofjesuschristtemples.org/assets/img/temples/johannesburg-south-africa-temple/johannesburg-south-africa-temple-22475-main.jpg"
       }
   ];
   document.addEventListener("DOMContentLoaded", function () {
