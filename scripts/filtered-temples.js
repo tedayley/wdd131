@@ -113,22 +113,28 @@ const temples = [
         let filtered;
         switch (criteria) {
             case "old":
-                filtered = temples.filter((t) => parseInt(t.dedicated.split(", ")[0]) < 1900);
+                filtered = temples.filter((t) => {
+                    let year = parseInt(t.dedicated.match(/\d{4}/)[0]); // Extracts the 4-digit year safely
+                    return year < 1900;
+                });
                 break;
             case "new":
-                filtered = temples.filter((t) => parseInt(t.dedicated.split(", ")[0]) > 2000);
+                filtered = temples.filter((t) => {
+                    let year = parseInt(t.dedicated.match(/\d{4}/)[0]);
+                    return year > 2000;
+                });
                 break;
             case "large":
-                filtered = temples.filter((t) => t.area > 90000);
+                filtered = temples.filter((t) => t.area >= 90000); // Ensuring it includes 90000+
                 break;
             case "small":
-                filtered = temples.filter((t) => t.area < 10000);
+                filtered = temples.filter((t) => t.area <= 10000); // Includes exactly 10,000
                 break;
             default:
                 filtered = temples;
         }
         displayTemples(filtered);
-    }
+    }    
 
     // Event listeners for buttons
     buttons.forEach((button) => {
