@@ -43,6 +43,7 @@ body {
   }
   
   nav a, nav button {
+    float: right;
     color: white;
     text-decoration: none;
     background: none;
