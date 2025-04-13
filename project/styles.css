@@ -6,7 +6,39 @@ body {
     background-color: #f9f9f9;
     color: #333;
   }
-  
+
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Button style when in dark mode */
+body.dark-mode button {
+  background-color: #333;
+  color: #f0f0f0;
+  box-shadow: 0 4px 6px rgba(255,255,255,0.1);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+
   h1, h2, h3 {
     margin: 0;
   }

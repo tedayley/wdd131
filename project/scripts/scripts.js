@@ -35,3 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Set last modified date
     document.getElementById("lastModified").textContent = document.lastModified;
 });
+
+function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+}
