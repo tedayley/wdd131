@@ -49,22 +49,10 @@
       </form>
     </div>
   </div>
-
-  <script>
-    function openContactForm() {
-      document.getElementById('contactModal').style.display = 'block';
-    }
-
-    function closeContactForm() {
-      document.getElementById('contactModal').style.display = 'none';
-    }
-
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Message sent! (This is a placeholder alert)');
-      closeContactForm();
-    });
-  </script>
+  <footer>
+    <p>&copy; <span id="year"></span> Taeg Dayley. All rights reserved.</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
 
 </body>
 </html>
