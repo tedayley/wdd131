@@ -27,7 +27,7 @@ body {
 #section1 {
   background-color: #f9f9f9;
   color: #333;
-  grid-column: 1 / span 3; /* spans all 3 columns */
+  grid-column: 1 / span 4; /* spans all 3 columns */
   grid-row: 1;
 }
 
