@@ -18,15 +18,15 @@ function openContactForm() {
     document.getElementById('contactModal').style.display = 'block';
   }
 
-  function closeContactForm() {
-    document.getElementById('contactModal').style.display = 'none';
-  }
+function closeContactForm() {
+  document.getElementById('contactModal').style.display = 'none';
+}
 
-  document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Message sent! (This is a placeholder alert)');
-    closeContactForm();
-  });
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Message sent! (This is a placeholder alert)');
+  closeContactForm();
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     // Set current year in copyright
