@@ -24,10 +24,29 @@ body {
     width: 45%;
   }
   
-  /* Light mode styles */
-  #section1 { background-color: #f9f9f9; color: #333; grid-column: 1 / span 3; grid-row: 1 / 2;}
-  #section2 { background-color: #e9f7ff; color: #333; grid-column: 1 / span 2; grid-row: 2 / 3;} 
-  #section3 { background-color: #fff4e6; color: #333; grid-column: 2 / span 3; grid-row: 2 / 3;}
+/* Top row - full width */
+#section1 {
+  background-color: #f9f9f9;
+  color: #333;
+  grid-column: 1 / span 3; /* spans all 3 columns */
+  grid-row: 1;
+}
+
+/* Bottom row, left side */
+#section2 {
+  background-color: #e9f7ff;
+  color: #333;
+  grid-column: 1 / 2; /* first column */
+  grid-row: 2;
+}
+
+/* Bottom row, right side (2 columns wide) */
+#section3 {
+  background-color: #fff4e6;
+  color: #333;
+  grid-column: 2 / 4; /* spans column 2 and 3 */
+  grid-row: 2;
+}
   
   /* Dark mode styles */
   body.dark-mode #section1 { background-color: #1e1e1e; color: #f1f1f1; }
